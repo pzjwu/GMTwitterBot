@@ -96,10 +96,7 @@ class MyStreamListener(tweepy.StreamListener):
             status.text,
             status.author.screen_name
         ))
-
-        # get the text from the tweet mentioning the bot.
-        # for this bot, we won't need this since it doesn't process the tweet.
-        # but if your bot does, then you'll want to use this
+        
         message = status.text
 
         celeb_data_today = get_celeb("https://www.famousbirthdays.com/")
